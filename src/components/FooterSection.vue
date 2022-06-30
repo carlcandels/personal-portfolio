@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { BeakerIcon } from "@heroicons/vue/solid";
 
 export default {

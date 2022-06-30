@@ -1,16 +1,20 @@
-<script setup lang="ts">
+<script lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import Footer from "@/components/FooterSection.vue";
+import Footer from "./components/FooterSection.vue";
+import Navigation from "./components/NavigationSection.vue";
+
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  components: {
+    Footer,
+    Navigation
+  },
+});
 </script>
 
 <template>
-  <div id="navigation" class="col-span-4 flex justify-center align-middle">
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/what-i-do">What I've worked on</RouterLink>
-    <RouterLink to="/what-i-do-for-fun">What I do for fun</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
-  </div>
-
+  <Navigation />
   <RouterView />
   <Footer />
 </template>

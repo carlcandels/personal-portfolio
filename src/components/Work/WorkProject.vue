@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:flex flex-row border-2 rounded-lg border-slate-600 p-8 mb-3">
+  <div class="md:flex flex-row border-2 rounded-lg border-slate-600 p-8 mb-3">
     <div class="basis-1/3 mr-4">
       <div class="">
         <div class="text-lg antialiased font-bold mb-2 text-slate-100">Project Title</div>
